@@ -1,0 +1,4 @@
+vai(x=0;x<y;x++){
+aqui(x==y){
+dec y =x*y;
+}
