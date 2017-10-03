@@ -23,7 +23,8 @@ private void unknownCharacter(String description){
 %class LexicalAnalyzer
 %type void
 
-EOL 				 = [\r|\n|\r\n]
+LETTER 			 = [a-z|A-Z|a-z0-9]
+EOL 			 = [\r|\n|\r\n]
 NEWLINE			 = [\n]
 TAB				 = [\t]
 BLANK 			 = [\n| |\t|\r|\r\n]
@@ -37,8 +38,8 @@ DIV				 = "/"
 int			 = 0|[1-9][0-9]*
 dec			 = (([0-9]+[.][0-9]*)|([0-9]*[.][0-9]+))
 CHAR				 = ['][a-z|A-Z|a-z0-9][']
-seq 			 = ["].[^\x]+[a-z|A-Z|a-z0-9]*.[^\x]+["]
-EMPTY_STRING		 = [']['] | [']{BLANK}*['] | ["]["]| ["]{BLANK}*["]
+seq 			 = \"{LETTER}+\"
+EMPTY_STRING		 = [']['] | [']{BLANK}*['] | \"\"| \"{BLANK}*\"
 COMMENT 		 	 = "/*" [^*] ~"*/" | "/*" "*" "/"
 
 %%

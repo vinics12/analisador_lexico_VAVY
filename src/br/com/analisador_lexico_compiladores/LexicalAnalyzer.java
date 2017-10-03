@@ -34,14 +34,13 @@ class LexicalAnalyzer {
    * Translates characters to character classes
    */
   private static final String ZZ_CMAP_PACKED = 
-    "\11\0\1\3\1\2\1\56\1\56\1\1\22\0\1\1\1\51\4\0"+
-    "\1\50\1\15\1\45\1\46\1\11\1\7\1\53\1\10\1\14\1\12"+
-    "\1\13\10\6\1\6\1\0\1\44\1\54\1\52\1\55\2\0\1\16"+
-    "\1\16\10\16\2\16\1\16\1\16\13\16\1\16\1\47\1\0\1\20"+
-    "\1\17\1\4\1\0\1\32\1\16\1\27\1\25\1\26\1\16\1\42"+
-    "\1\16\1\22\2\16\1\34\1\36\1\23\1\37\1\41\1\31\1\40"+
-    "\1\30\1\24\1\33\1\35\1\16\1\16\1\16\1\16\1\43\1\5"+
-    "\1\21\7\0\1\56\u1fa2\0\1\56\1\56\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\udfe6\0";
+    "\11\0\1\5\1\4\1\56\1\56\1\2\22\0\1\2\1\51\1\17"+
+    "\3\0\1\50\1\16\1\44\1\45\1\12\1\10\1\53\1\11\1\15"+
+    "\1\13\1\14\11\1\1\0\1\43\1\54\1\52\1\55\2\0\32\7"+
+    "\1\46\1\0\1\47\1\0\1\6\1\0\1\30\1\7\1\25\1\23"+
+    "\1\24\1\7\1\40\1\7\1\20\2\7\1\32\1\34\1\21\1\35"+
+    "\1\37\1\27\1\36\1\26\1\22\1\31\1\33\4\7\1\41\1\3"+
+    "\1\42\7\0\1\56\u1fa2\0\1\56\1\56\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\udfe6\0";
 
   /** 
    * Translates characters to character classes
@@ -54,17 +53,17 @@ class LexicalAnalyzer {
   private static final int [] ZZ_ACTION = zzUnpackAction();
 
   private static final String ZZ_ACTION_PACKED_0 =
-    "\1\0\1\1\1\2\1\3\1\4\1\5\1\2\1\6"+
-    "\1\7\1\10\1\11\1\12\1\6\1\13\1\1\1\13"+
-    "\1\14\1\15\7\5\1\16\1\17\1\20\1\21\1\22"+
-    "\2\1\1\23\1\24\1\25\1\26\1\27\1\30\1\31"+
-    "\1\32\5\0\1\33\10\5\1\34\1\35\1\36\1\37"+
-    "\1\40\2\0\1\41\1\42\1\43\1\44\1\5\1\45"+
-    "\1\46\2\5\1\0\1\47\1\50\3\5\1\51\1\5"+
-    "\1\52\1\5\1\53";
+    "\1\0\1\1\1\2\2\3\1\4\1\5\1\6\1\7"+
+    "\1\10\1\11\1\12\1\2\3\1\7\6\1\13\1\14"+
+    "\1\15\1\16\1\17\1\20\1\21\2\1\1\22\1\23"+
+    "\1\24\1\25\1\26\1\27\1\30\1\31\5\0\1\32"+
+    "\3\0\10\6\1\33\1\34\1\35\1\36\1\37\2\0"+
+    "\1\40\1\41\1\42\1\43\1\44\1\6\1\45\1\46"+
+    "\2\6\1\0\1\47\1\50\3\6\1\51\1\6\1\52"+
+    "\1\6\1\53";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[81];
+    int [] result = new int[85];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -89,20 +88,20 @@ class LexicalAnalyzer {
   private static final int [] ZZ_ROWMAP = zzUnpackRowMap();
 
   private static final String ZZ_ROWMAP_PACKED_0 =
-    "\0\0\0\57\0\57\0\57\0\57\0\136\0\215\0\274"+
-    "\0\353\0\u011a\0\57\0\u0149\0\u0178\0\u01a7\0\u01d6\0\57"+
-    "\0\57\0\57\0\u0205\0\u0234\0\u0263\0\u0292\0\u02c1\0\u02f0"+
-    "\0\u031f\0\57\0\57\0\57\0\57\0\57\0\u034e\0\u037d"+
-    "\0\u03ac\0\57\0\u03db\0\u040a\0\136\0\u01a7\0\57\0\57"+
-    "\0\u0439\0\u0178\0\u0468\0\u0497\0\u04c6\0\57\0\u04f5\0\u0524"+
-    "\0\u0553\0\u0582\0\u05b1\0\u05e0\0\u060f\0\u063e\0\57\0\57"+
-    "\0\57\0\57\0\57\0\u066d\0\u069c\0\57\0\136\0\136"+
-    "\0\136\0\u06cb\0\136\0\u06fa\0\u0729\0\u0758\0\u0787\0\57"+
-    "\0\136\0\u07b6\0\u07e5\0\u0814\0\136\0\u0843\0\136\0\u0872"+
-    "\0\136";
+    "\0\0\0\57\0\136\0\57\0\215\0\57\0\57\0\274"+
+    "\0\353\0\u011a\0\57\0\u0149\0\u0178\0\u01a7\0\u01d6\0\u0205"+
+    "\0\u0234\0\u0263\0\u0292\0\u02c1\0\u02f0\0\u031f\0\u034e\0\57"+
+    "\0\57\0\57\0\57\0\57\0\57\0\57\0\u037d\0\u03ac"+
+    "\0\u03db\0\57\0\u040a\0\u0439\0\u01a7\0\274\0\57\0\57"+
+    "\0\u0468\0\u0178\0\u0497\0\u04c6\0\u04f5\0\57\0\u0524\0\u0553"+
+    "\0\u0582\0\u05b1\0\u05e0\0\u060f\0\u063e\0\u066d\0\u069c\0\u06cb"+
+    "\0\u06fa\0\57\0\57\0\57\0\57\0\57\0\u0729\0\u0758"+
+    "\0\57\0\57\0\274\0\274\0\274\0\u0787\0\274\0\u07b6"+
+    "\0\u07e5\0\u0814\0\u0843\0\57\0\274\0\u0872\0\u08a1\0\u08d0"+
+    "\0\274\0\u08ff\0\274\0\u092e\0\274";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[81];
+    int [] result = new int[85];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -125,56 +124,66 @@ class LexicalAnalyzer {
   private static final int [] ZZ_TRANS = zzUnpackTrans();
 
   private static final String ZZ_TRANS_PACKED_0 =
-    "\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11"+
-    "\1\12\1\13\1\14\1\15\1\16\1\17\1\6\1\20"+
-    "\1\21\1\22\1\23\2\6\1\24\2\6\1\25\1\6"+
-    "\1\26\2\6\1\27\1\30\2\6\1\31\1\6\1\32"+
-    "\1\33\1\34\1\35\1\36\1\37\1\40\1\41\1\42"+
-    "\1\43\1\44\64\0\3\6\4\0\1\6\2\0\1\6"+
-    "\3\0\21\6\20\0\1\6\1\45\1\6\4\0\1\6"+
-    "\2\0\1\6\3\0\21\6\22\0\1\10\4\0\1\10"+
-    "\1\46\51\0\1\47\57\0\1\50\57\0\1\51\53\0"+
-    "\1\52\4\0\1\52\1\46\50\0\1\46\4\0\1\46"+
-    "\44\0\3\53\1\0\1\54\1\55\4\0\1\55\1\0"+
-    "\1\56\1\55\3\0\21\55\20\0\3\6\4\0\1\6"+
-    "\2\0\1\6\3\0\1\6\1\57\17\6\20\0\3\6"+
-    "\4\0\1\6\2\0\1\6\3\0\4\6\1\60\14\6"+
-    "\20\0\3\6\4\0\1\6\2\0\1\6\3\0\4\6"+
-    "\1\61\14\6\20\0\3\6\4\0\1\6\2\0\1\6"+
-    "\3\0\7\6\1\62\2\6\1\63\6\6\20\0\3\6"+
-    "\4\0\1\6\2\0\1\6\3\0\10\6\1\64\10\6"+
-    "\20\0\3\6\4\0\1\6\2\0\1\6\3\0\15\6"+
-    "\1\65\3\6\20\0\3\6\4\0\1\6\2\0\1\6"+
-    "\3\0\4\6\1\66\14\6\64\0\1\67\60\0\1\70"+
-    "\56\0\1\71\56\0\1\72\56\0\1\73\4\0\11\74"+
-    "\1\75\45\74\1\0\3\53\1\0\1\53\7\0\1\56"+
-    "\42\0\3\53\1\0\1\53\7\0\1\76\56\0\1\76"+
-    "\45\0\3\6\4\0\1\6\2\0\1\6\3\0\2\6"+
-    "\1\77\16\6\20\0\3\6\4\0\1\6\2\0\1\6"+
-    "\3\0\5\6\1\100\13\6\20\0\3\6\4\0\1\6"+
-    "\2\0\1\6\3\0\7\6\1\101\11\6\20\0\3\6"+
-    "\4\0\1\6\2\0\1\6\3\0\11\6\1\102\7\6"+
-    "\20\0\3\6\4\0\1\6\2\0\1\6\3\0\1\103"+
-    "\20\6\20\0\3\6\4\0\1\6\2\0\1\6\3\0"+
-    "\1\104\20\6\20\0\3\6\4\0\1\6\2\0\1\6"+
-    "\3\0\6\6\1\105\12\6\20\0\3\6\4\0\1\6"+
-    "\2\0\1\6\3\0\20\6\1\106\14\0\11\74\1\107"+
-    "\45\74\12\0\1\110\50\0\3\6\4\0\1\6\2\0"+
-    "\1\6\3\0\1\111\20\6\20\0\3\6\4\0\1\6"+
-    "\2\0\1\6\3\0\6\6\1\112\12\6\20\0\3\6"+
-    "\4\0\1\6\2\0\1\6\3\0\2\6\1\113\16\6"+
-    "\20\0\3\6\4\0\1\6\2\0\1\6\3\0\10\6"+
-    "\1\114\10\6\14\0\11\74\1\107\1\110\44\74\4\0"+
-    "\3\6\4\0\1\6\2\0\1\6\3\0\4\6\1\115"+
-    "\14\6\20\0\3\6\4\0\1\6\2\0\1\6\3\0"+
-    "\16\6\1\116\2\6\20\0\3\6\4\0\1\6\2\0"+
-    "\1\6\3\0\16\6\1\117\2\6\20\0\3\6\4\0"+
-    "\1\6\2\0\1\6\3\0\10\6\1\120\10\6\20\0"+
-    "\3\6\4\0\1\6\2\0\1\6\3\0\16\6\1\121"+
-    "\2\6\14\0";
+    "\1\2\1\3\1\4\1\5\1\6\1\7\2\10\1\11"+
+    "\1\12\1\13\1\14\1\15\1\16\1\17\1\20\1\21"+
+    "\2\10\1\22\2\10\1\23\1\10\1\24\2\10\1\25"+
+    "\1\26\2\10\1\27\1\10\1\30\1\31\1\32\1\33"+
+    "\1\34\1\35\1\36\1\37\1\40\1\41\1\42\1\43"+
+    "\1\44\61\0\1\3\12\0\1\3\1\45\42\0\1\10"+
+    "\1\0\1\46\2\0\2\10\4\0\1\10\3\0\21\10"+
+    "\17\0\1\10\1\0\1\10\2\0\2\10\4\0\1\10"+
+    "\3\0\21\10\26\0\1\47\57\0\1\50\57\0\1\51"+
+    "\45\0\1\52\12\0\1\52\1\45\42\0\1\45\12\0"+
+    "\1\45\43\0\1\53\1\54\1\55\2\54\1\0\1\53"+
+    "\4\0\1\53\1\0\1\56\1\0\21\53\17\0\1\57"+
+    "\1\60\1\61\2\60\1\0\1\57\4\0\1\57\2\0"+
+    "\1\56\21\57\17\0\1\10\1\0\1\10\2\0\2\10"+
+    "\4\0\1\10\3\0\1\10\1\62\17\10\17\0\1\10"+
+    "\1\0\1\10\2\0\2\10\4\0\1\10\3\0\4\10"+
+    "\1\63\14\10\17\0\1\10\1\0\1\10\2\0\2\10"+
+    "\4\0\1\10\3\0\4\10\1\64\14\10\17\0\1\10"+
+    "\1\0\1\10\2\0\2\10\4\0\1\10\3\0\7\10"+
+    "\1\65\2\10\1\66\6\10\17\0\1\10\1\0\1\10"+
+    "\2\0\2\10\4\0\1\10\3\0\10\10\1\67\10\10"+
+    "\17\0\1\10\1\0\1\10\2\0\2\10\4\0\1\10"+
+    "\3\0\15\10\1\70\3\10\17\0\1\10\1\0\1\10"+
+    "\2\0\2\10\4\0\1\10\3\0\4\10\1\71\14\10"+
+    "\66\0\1\72\60\0\1\73\56\0\1\74\56\0\1\75"+
+    "\56\0\1\76\4\0\12\77\1\100\44\77\16\0\1\101"+
+    "\42\0\4\54\10\0\1\56\42\0\4\54\10\0\1\101"+
+    "\41\0\1\57\1\0\1\57\3\0\1\57\4\0\1\57"+
+    "\2\0\1\102\21\57\20\0\4\60\11\0\1\56\40\0"+
+    "\1\57\1\60\1\61\2\60\1\0\1\57\4\0\1\57"+
+    "\2\0\1\102\21\57\17\0\1\10\1\0\1\10\2\0"+
+    "\2\10\4\0\1\10\3\0\2\10\1\103\16\10\17\0"+
+    "\1\10\1\0\1\10\2\0\2\10\4\0\1\10\3\0"+
+    "\5\10\1\104\13\10\17\0\1\10\1\0\1\10\2\0"+
+    "\2\10\4\0\1\10\3\0\7\10\1\105\11\10\17\0"+
+    "\1\10\1\0\1\10\2\0\2\10\4\0\1\10\3\0"+
+    "\11\10\1\106\7\10\17\0\1\10\1\0\1\10\2\0"+
+    "\2\10\4\0\1\10\3\0\1\107\20\10\17\0\1\10"+
+    "\1\0\1\10\2\0\2\10\4\0\1\10\3\0\1\110"+
+    "\20\10\17\0\1\10\1\0\1\10\2\0\2\10\4\0"+
+    "\1\10\3\0\6\10\1\111\12\10\17\0\1\10\1\0"+
+    "\1\10\2\0\2\10\4\0\1\10\3\0\20\10\1\112"+
+    "\16\0\12\77\1\113\44\77\13\0\1\114\44\0\1\10"+
+    "\1\0\1\10\2\0\2\10\4\0\1\10\3\0\1\115"+
+    "\20\10\17\0\1\10\1\0\1\10\2\0\2\10\4\0"+
+    "\1\10\3\0\6\10\1\116\12\10\17\0\1\10\1\0"+
+    "\1\10\2\0\2\10\4\0\1\10\3\0\2\10\1\117"+
+    "\16\10\17\0\1\10\1\0\1\10\2\0\2\10\4\0"+
+    "\1\10\3\0\10\10\1\120\10\10\16\0\12\77\1\113"+
+    "\1\114\43\77\1\0\1\10\1\0\1\10\2\0\2\10"+
+    "\4\0\1\10\3\0\4\10\1\121\14\10\17\0\1\10"+
+    "\1\0\1\10\2\0\2\10\4\0\1\10\3\0\16\10"+
+    "\1\122\2\10\17\0\1\10\1\0\1\10\2\0\2\10"+
+    "\4\0\1\10\3\0\16\10\1\123\2\10\17\0\1\10"+
+    "\1\0\1\10\2\0\2\10\4\0\1\10\3\0\10\10"+
+    "\1\124\10\10\17\0\1\10\1\0\1\10\2\0\2\10"+
+    "\4\0\1\10\3\0\16\10\1\125\2\10\16\0";
 
   private static int [] zzUnpackTrans() {
-    int [] result = new int[2209];
+    int [] result = new int[2397];
     int offset = 0;
     offset = zzUnpackTrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -212,12 +221,13 @@ class LexicalAnalyzer {
   private static final int [] ZZ_ATTRIBUTE = zzUnpackAttribute();
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
-    "\1\0\4\11\5\1\1\11\4\1\3\11\7\1\5\11"+
-    "\3\1\1\11\4\1\2\11\5\0\1\11\10\1\5\11"+
-    "\2\0\1\11\10\1\1\0\1\11\11\1";
+    "\1\0\1\11\1\1\1\11\1\1\2\11\3\1\1\11"+
+    "\14\1\7\11\3\1\1\11\4\1\2\11\5\0\1\11"+
+    "\3\0\10\1\5\11\2\0\2\11\10\1\1\0\1\11"+
+    "\11\1";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[81];
+    int [] result = new int[85];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -329,7 +339,7 @@ private void unknownCharacter(String description){
     char [] map = new char[0x110000];
     int i = 0;  /* index in packed string  */
     int j = 0;  /* index in unpacked array */
-    while (i < 186) {
+    while (i < 166) {
       int  count = packed.charAt(i++);
       char value = packed.charAt(i++);
       do map[j++] = value; while (--count > 0);
@@ -628,23 +638,23 @@ private void unknownCharacter(String description){
             }
           case 44: break;
           case 2: 
-            { printToken("Blank space ", yytext());
+            { printToken("Integer number ", yytext());
             }
           case 45: break;
           case 3: 
-            { printNewLine("New line scape");
+            { printToken("Blank space ", yytext());
             }
           case 46: break;
           case 4: 
-            { printTAB("Tabulation scape");
+            { printNewLine("New line scape");
             }
           case 47: break;
           case 5: 
-            { printToken("Identificator ", yytext());
+            { printTAB("Tabulation scape");
             }
           case 48: break;
           case 6: 
-            { printToken("Integer number ", yytext());
+            { printToken("Identificator ", yytext());
             }
           case 49: break;
           case 7: 
@@ -664,51 +674,51 @@ private void unknownCharacter(String description){
             }
           case 53: break;
           case 11: 
-            { printToken("String ", yytext());
+            { printToken("block start ", yytext());
             }
           case 54: break;
           case 12: 
-            { printToken("Close bracket ", yytext());
+            { printToken("Block end ", yytext());
             }
           case 55: break;
           case 13: 
-            { printToken("Block end ", yytext());
+            { printToken("End of instruction", yytext());
             }
           case 56: break;
           case 14: 
-            { printToken("block start ", yytext());
+            { printToken("Open parentheses ", yytext());
             }
           case 57: break;
           case 15: 
-            { printToken("End of instruction", yytext());
+            { printToken("Close parentheses ", yytext());
             }
           case 58: break;
           case 16: 
-            { printToken("Open parentheses ", yytext());
+            { printToken("Open bracket ", yytext());
             }
           case 59: break;
           case 17: 
-            { printToken("Close parentheses ", yytext());
+            { printToken("Close bracket ", yytext());
             }
           case 60: break;
           case 18: 
-            { printToken("Open bracket ", yytext());
+            { printToken("Attribution operator ", yytext());
             }
           case 61: break;
           case 19: 
-            { printToken("Attribution operator ", yytext());
+            { printToken("Concatenation operator ", yytext());
             }
           case 62: break;
           case 20: 
-            { printToken("Concatenation operator ", yytext());
+            { printToken("Less than operator ", yytext());
             }
           case 63: break;
           case 21: 
-            { printToken("Less than operator ", yytext());
+            { printToken("Greater than operator ", yytext());
             }
           case 64: break;
           case 22: 
-            { printToken("Greater than operator ", yytext());
+            { printToken("Float number ",yytext());
             }
           case 65: break;
           case 23: 
@@ -716,43 +726,43 @@ private void unknownCharacter(String description){
             }
           case 66: break;
           case 24: 
-            { printToken("Float number ",yytext());
+            { printToken("Increment operator ", yytext());
             }
           case 67: break;
           case 25: 
-            { printToken("Increment operator ", yytext());
+            { printToken("Decrement operator ", yytext());
             }
           case 68: break;
           case 26: 
-            { printToken("Decrement operator ", yytext());
+            { printToken("Empty string ", yytext());
             }
           case 69: break;
           case 27: 
-            { printToken("Empty string ", yytext());
+            { printToken("AND operator ", yytext());
             }
           case 70: break;
           case 28: 
-            { printToken("AND operator ", yytext());
+            { printToken("Not equal operator", yytext());
             }
           case 71: break;
           case 29: 
-            { printToken("Not equal operator", yytext());
+            { printToken("Equal to operator ", yytext());
             }
           case 72: break;
           case 30: 
-            { printToken("Equal to operator ", yytext());
+            { printToken("Less than or equal to operator ", yytext());
             }
           case 73: break;
           case 31: 
-            { printToken("Less than or equal to operator ", yytext());
+            { printToken("Greater than or equal to operator ", yytext());
             }
           case 74: break;
           case 32: 
-            { printToken("Greater than or equal to operator ", yytext());
+            { printToken("Character ", yytext());
             }
           case 75: break;
           case 33: 
-            { printToken("Character ", yytext());
+            { printToken("String ", yytext());
             }
           case 76: break;
           case 34: 
